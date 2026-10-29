@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Identidad visual "Marginalia": papel cálido, tinta oscura y verde bosque como acento. */
+@theme {
+  --color-canvas: #f4efe6;
+  --color-surface: #fdfbf7;
+  --color-line: #ddd4c4;
+  --color-ink: #1d1a16;
+  --color-ink-muted: #6a6256;
+  --color-accent: #2d5a4c;
+  --color-accent-hover: #234a3e;
+  --color-accent-soft: #e1ece6;
+  --color-note: #b5651d;
+  --color-danger: #a4302a;
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --radius-card: 10px;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-sans); }
+h1, h2, h3 { font-family: var(--font-serif); }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
